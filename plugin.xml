@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="lycwed-cordova-plugin-admob-tapjoy" version="1.0.0"
+<plugin id="cordova-plugin-admob-mediation-tapjoy" version="1.0.0"
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <name>lycwed-cordova-plugin-admob-tapjoy</name>
+    <name>cordova-plugin-admob-mediation-tapjoy</name>
     <description>Cordova AdMob Mediation Plugin for Tapjoy</description>
 
     <engines>
@@ -11,16 +11,39 @@
     </engines>
 
     <platform name="android">
-        <framework src="" />
+        <framework src="com.tapjoy:tapjoy-android-sdk:11.12.2" />
+        <framework src="com.google.ads.mediation:tapjoy:11.12.2.0" />
+
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+           <activity
+			android:name="com.tapjoy.TJAdUnitActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:hardwareAccelerated="true"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+		<activity
+			android:name="com.tapjoy.mraid.view.ActionHandler"
+			android:configChanges="orientation|keyboardHidden|screenSize" />
+
+		<activity
+			android:name="com.tapjoy.mraid.view.Browser"
+			android:configChanges="orientation|keyboardHidden|screenSize" />
+
+		<activity
+			android:name="com.tapjoy.TJContentActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:hardwareAccelerated="true" />
+        </config-file>
 
         <!-- Prevents compilation error: https://developer.android.com/studio/build/multidex.html -->
-        <!-- when add additional mediation plugins
-        <dependency id="cordova-plugin-multidex" /> -->
+        <!-- when add additional mediation plugins 
+        <dependency id="cordova-plugin-multidex" />-->
     </platform>
 
     <platform name="ios">
         <pods-config ios-min-version="9.0" use-frameworks="true" />
-        <pod id="" version="5.3.2.0" />
+        <pod id="GoogleMobileAdsMediationTapjoy" version="11.12.2" custom="true" />
 
         <!-- Prevents compilation failures when using pod's id with additional mediations plugins -->
         <dependency id="cordova-plugin-cocoapod-support" />
