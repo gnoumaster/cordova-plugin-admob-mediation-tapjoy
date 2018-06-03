@@ -1,31 +1,58 @@
 {
-  "name": "lycwed-cordova-plugin-admob-tapjoy",
-  "version": "1.0.0",
-  "description": "Cordova AdMob Mediation Plugin for Tapjoy",
-  "scripts": {
-    "version": "sync-package-version --cordova-plugin"
+  "_from": "git+https://github.com/gnoumaster/cordova-plugin-admob-mediation-tapjoy.git",
+  "_id": "cordova-plugin-admob-mediation-tapjoy@1.0.0",
+  "_inBundle": false,
+  "_location": "/cordova-plugin-admob-mediation-tapjoy",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/gnoumaster/cordova-plugin-admob-mediation-tapjoy",
+    "rawSpec": "https://github.com/gnoumaster/cordova-plugin-admob-mediation-tapjoy",
+    "saveSpec": "git+https://github.com/gnoumaster/cordova-plugin-admob-mediation-tapjoy.git",
+    "fetchSpec": "https://github.com/gnoumaster/cordova-plugin-admob-mediation-tapjoy.git",
+    "gitCommittish": null
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/gnoumaster/cordova-plugin-admob-mediation-tapjoy.git#70ee0a07d102dda25586fc9c1bdf20e6e6df2dcf",
+  "_spec": "https://github.com/gnoumaster/cordova-plugin-admob-mediation-tapjoy",
+  "_where": "C:\\Users\\gnoumaster\\CloudStation\\Appli\\Baby Name Together\\Code\\baby_app_ionic",
+  "author": {
+    "name": "Lycwed"
+  },
+  "bugs": {
+    "url": "https://github.com/gnoumaster/cordova-plugin-admob-mediation-tapjoy/issues"
+  },
+  "bundleDependencies": false,
   "cordova": {
-    "id": "lycwed-cordova-plugin-admob-tapjoy",
+    "id": "cordova-plugin-admob-mediation-tapjoy",
     "platforms": [
       "android",
       "ios"
     ]
   },
-  "repository": "lycwed/lycwed-cordova-plugin-admob-tapjoy",
-  "author": "Lycwed",
-  "license": "MIT",
+  "deprecated": false,
+  "description": "Cordova AdMob Mediation Plugin for Tapjoy",
+  "homepage": "https://github.com/gnoumaster/cordova-plugin-admob-mediation-tapjoy",
   "keywords": [
     "cordova-android",
     "cordova-ios",
     "cordova",
     "plugin",
     "admob",
-    "tapjoy",
+    "Tapjoy",
     "mediation"
   ],
-  "bugs": {
-    "url": "https://github.com/lycwed/lycwed-cordova-plugin-admob-tapjoy/issues"
+  "license": "MIT",
+  "name": "cordova-plugin-admob-mediation-tapjoy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnoumaster/cordova-plugin-admob-mediation-tapjoy.git"
   },
-  "homepage": "https://github.com/lycwed/lycwed-cordova-plugin-admob-tapjoy"
+  "scripts": {
+    "version": "sync-package-version --cordova-plugin"
+  },
+  "version": "1.0.0"
 }
